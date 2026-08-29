@@ -10,21 +10,21 @@
   },
   "ticker": {
     "enabled": true,
-    "text": "مرحباً بكم في منصة زلزال الرسمية!  !",
+    "text": "مرحباً بكم في منصة زلزال !  !",
     "link": "#games",
     "speed": 18
   },
   "social": {
     "telegramChannel": {
-      "name": "قناة التلجرام الرسمية",
+      "name": "قناة التلجرام ",
       "url": "https://t.me/snt41",
       "handle": "@snt41",
-      "description": "القناة الرسمية للأخبار والتحديثات والمسابقات",
+      "description": "القناة  للأخبار والتحديثات",
       "badge": "1k+ مشترك",
       "icon": "fab fa-telegram-plane"
     },
     "telegramGroup": {
-      "name": "كروب الدردشة والمجتمع",
+      "name": "كروب الدردشة ",
       "url": "https://t.me/snt_2",
       "handle": "@snt_2",
       "description": "ملتقى الأعضاء والدردشة والتفاعل المباشر",
@@ -32,18 +32,18 @@
       "icon": "fas fa-comments"
     },
     "tiktok": {
-      "name": "حساب تيك توك الرسمي",
+      "name": "حساب تيك توك ",
       "url": "https://tiktok.com/@jo03kr",
       "handle": "@jo03kr",
-      "description": "أقوى مقاطع الفيديو والتحديات والبثوث المباشرة",
+      "description": "البثوث المباشرة",
       "badge": "2955k+ متابع",
       "icon": "fab fa-tiktok"
     },
     "instagram": {
-      "name": "حساب انستغرام الرسمي",
+      "name": "حساب انستغرام ",
       "url": "https://instagram.com/zil.zal1",
       "handle": "@zil.zal1",
-      "description": "الصور واليوميات والقصص التفاعلية",
+      "description": "الصور واليوميات والقصص ",
       "badge": "100+ متابع",
       "icon": "fab fa-instagram"
     }
@@ -85,14 +85,6 @@
       "badge": "ذكاء",
       "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
     },
-    {
-      "id": "ssa",
-      "name": "عملات ",
-      "description": "عملات",
-      "icon": "fas fa-times-circle",
-      "badge": "تجكيع",
-      "image": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=500&q=80"
-    }
     {
       "id": "tictactoe",
       "name": "إكس أو ",
