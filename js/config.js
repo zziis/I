@@ -33,7 +33,7 @@ const ConfigManager = (() => {
         currentConfig = {
           branding: {
             name: "منصة زلزال",
-            tagline: "المنصة الفاخرة للترفيه، الألعاب المصغرة، والمجتمع الرقمي الحصري",
+            tagline: "المنصة  للترفيه، الألعاب المصغرة، والمجتمع الرقمي الحصري",
             logoUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80",
             bannerUrl: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
             themeColor: "#f5b700",
