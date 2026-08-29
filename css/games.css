@@ -1,0 +1,151 @@
+/* ========================================================
+   Zilzal Platform - Games Arcade CSS
+   ======================================================== */
+.game-modal-card {
+  max-width: 680px;
+  background: #0b0e16;
+  border: 2px solid var(--gold-primary, #f5b700);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 50px rgba(245, 183, 0, 0.3);
+}
+
+.game-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 10px 18px;
+  margin-bottom: 15px;
+}
+
+.hud-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.hud-stat span {
+  color: var(--gold-light, #ffd166);
+}
+
+.game-canvas-wrap {
+  position: relative;
+  width: 100%;
+  background: #05070a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+canvas.game-canvas {
+  display: block;
+  max-width: 100%;
+  background: transparent;
+}
+
+/* Touch Controls */
+.mobile-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 220px;
+  margin: 15px auto 0;
+}
+
+.ctrl-btn {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--border-gold, rgba(245, 183, 0, 0.3));
+  background: rgba(245, 183, 0, 0.1);
+  color: var(--gold-primary, #f5b700);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ctrl-btn:active {
+  background: var(--gold-primary, #f5b700);
+  color: #000;
+}
+
+/* Memory Cards Grid */
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.memory-card-item {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--border-gold, rgba(245, 183, 0, 0.3));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.memory-card-item.flipped {
+  background: rgba(245, 183, 0, 0.15);
+  border-color: var(--gold-light, #ffd166);
+  transform: rotateY(180deg);
+}
+
+.memory-card-item.matched {
+  background: rgba(0, 255, 136, 0.2);
+  border-color: #00ff88;
+  pointer-events: none;
+}
+
+/* Tic Tac Toe Grid */
+.ttt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.ttt-cell {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--border-gold, rgba(245, 183, 0, 0.3));
+  border-radius: 12px;
+  font-size: 2.8rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ttt-cell:hover {
+  background: rgba(245, 183, 0, 0.1);
+}
+
+.ttt-cell.x {
+  color: var(--gold-primary, #f5b700);
+  text-shadow: 0 0 15px rgba(245, 183, 0, 0.5);
+}
+
+.ttt-cell.o {
+  color: #ff0055;
+  text-shadow: 0 0 15px rgba(255, 0, 85, 0.6);
+}

@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة زلزال | المنصة الفاخرة للترفيه والمجتمع الرقمي</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/games.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- 1. شريط الإعلانات التفاعلي (Ticker Bar) -->
+  <div class="ticker-wrapper" id="site-ticker-wrap">
+    <div class="ticker-badge"><i class="fas fa-bolt"></i> إعلانات زلزال</div>
+    <div class="ticker-content-track">
+      <a href="#games" class="ticker-content" id="site-ticker-content">
+        🔥 مرحباً بكم في منصة زلزال الرسمية! 🌟 تابعوا قناتنا على التلجرام لأحدث المسابقات والجوائز 🎮 جربوا ألعاب زلزال الحماسية الآن واجمعوا النقاط!
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. شريط التنقل والهيدر (Navbar) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo & Name -->
+      <a href="index.html" class="brand-wrapper">
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80" alt="زلزال" class="brand-logo brand-logo-img">
+        <div class="brand-text">
+          <h1 class="brand-title-text">منصة زلزال</h1>
+          <span class="brand-tagline-text">المنصة الفاخرة للترفيه الرقمي</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li class="nav-item active"><a href="#"><i class="fas fa-home"></i> الرئيسية</a></li>
+        <li class="nav-item"><a href="#social"><i class="fas fa-share-alt"></i> قنواتنا ومجتمعنا</a></li>
+        <li class="nav-item"><a href="#games"><i class="fas fa-gamepad"></i> صالة الألعاب</a></li>
+        <li class="nav-item"><a href="#stats"><i class="fas fa-chart-line"></i> الإحصائيات</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Live Visitor Pill -->
+        <div class="visitor-pill">
+          <div class="pulse-dot"></div>
+          <span id="nav-visitor-count">3,420 زائر</span>
+        </div>
+
+        <!-- Sound Toggle -->
+        <button class="btn-icon" id="btn-sound-toggle" title="كتم / تشغيل الصوت">
+          <i class="fas fa-volume-up"></i>
+        </button>
+
+        <!-- User / Auth Button -->
+        <button class="btn btn-gold" id="btn-nav-auth">
+          <i class="fas fa-user-circle"></i> دخول / حساب
+        </button>
+
+        <!-- Admin Portal Link -->
+        <a href="admin.html" class="btn-icon" title="لوحة تحكم المدير">
+          <i class="fas fa-crown" style="color:#ffd166;"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3. الواجهة البطلة والترحيب (Hero Section) -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-banner">
+        
+        <div class="hero-badge">
+          <i class="fas fa-crown"></i> المنصة الرسمية الأولى للترفيه والتحديات
+        </div>
+        
+        <h2 class="hero-title" id="hero-title">منصة زلزال الفاخرة</h2>
+        
+        <p class="hero-subtitle" id="hero-desc">
+          استمتع بأقوى الألعاب المصغرة والممتعة، تواصل مع مجتمعنا الحصري على تليجرام وتيك توك وانستغرام، واجمع النقاط والجوائز اليومية مع مساعد الذكاء الاصطناعي الذكي!
+        </p>
+
+        <div class="hero-cta">
+          <a href="#games" class="btn btn-gold" style="font-size:1.05rem; padding:12px 28px;">
+            <i class="fas fa-gamepad"></i> صالة الألعاب
+          </a>
+          <a href="#social" class="btn btn-outline" style="font-size:1.05rem; padding:12px 28px;">
+            <i class="fab fa-telegram-plane"></i> انضم لمجتمعنا
+          </a>
+          <button class="btn btn-outline" onclick="document.querySelector('.ai-fab').click();">
+            <i class="fas fa-robot"></i> اسأل مساعد زلزال AI
+          </button>
+        </div>
+
+        <!-- User personalized greeting badge -->
+        <div id="user-greeting-wrap" class="user-greeting-card" style="display:none;"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. قسم قنوات السوشيال ميديا والمجتمع (Social Hub) -->
+  <section class="section" id="social">
+    <div class="container">
+      
+      <div class="section-header">
+        <div>
+          <div class="section-title-wrap">
+            <div class="section-icon"><i class="fas fa-users"></i></div>
+            <h2 class="section-title">قنواتنا ومجتمع زلزال</h2>
+          </div>
+          <p class="section-desc">تابع كافة حساباتنا الرسمية وانضم لمجموعات الدردشة والتحديات الحصرية</p>
+        </div>
+      </div>
+
+      <!-- Social Cards Grid -->
+      <div class="social-grid" id="social-cards-grid">
+        <!-- Rendered Dynamically by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. صالة ألعاب زلزال الفاخرة (Games Arcade) -->
+  <section class="section" id="games">
+    <div class="container">
+      
+      <div class="section-header">
+        <div>
+          <div class="section-title-wrap">
+            <div class="section-icon"><i class="fas fa-gamepad"></i></div>
+            <h2 class="section-title">صالة ألعاب زلزال</h2>
+          </div>
+          <p class="section-desc">ألعاب مصغرة حماسية وسريعة بتصميم نيون أنيق ومكافآت نقاط فورية لحسابك</p>
+        </div>
+      </div>
+
+      <!-- Games Grid -->
+      <div class="games-grid" id="games-grid">
+        <!-- Rendered Dynamically by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. قسم الإحصائيات الفاخرة (Platform Stats) -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fas fa-eye"></i></div>
+          <div class="stat-number" id="stat-total-visits">3,420</div>
+          <div class="stat-label">إجمالي الزيارات للمنصة</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fas fa-user-clock"></i></div>
+          <div class="stat-number" id="live-active-visitors">24</div>
+          <div class="stat-label">زائر متصل الآن</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" id="stat-today-visits">185</div>
+          <div class="stat-label">زيارات اليوم</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">جاهزية واستقرار المنصة</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. الفوتر (Footer) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#"><i class="fas fa-home"></i> الرئيسية</a>
+        <a href="#social"><i class="fas fa-share-alt"></i> مجتمع زلزال</a>
+        <a href="#games"><i class="fas fa-gamepad"></i> صالة الألعاب</a>
+        <a href="admin.html"><i class="fas fa-lock"></i> لوحة المدير</a>
+      </div>
+      <p style="margin-top:10px;">جميع الحقوق محفوظة &copy; 2026 <strong>منصة زلزال</strong> | تصميم وتشغيل فاخر يعمل 100% على GitHub Pages ⚡</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       8. مساعد الذكاء الاصطناعي العائم (AI Chatbot)
+       ======================================================== -->
+  <div class="ai-fab" title="اسأل مساعد زلزال الذكي">
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <div class="ai-chat-window">
+    <div class="ai-header">
+      <div class="ai-bot-profile">
+        <div class="ai-bot-avatar"><i class="fas fa-robot"></i></div>
+        <div class="ai-bot-title">
+          <h4>مساعد زلزال الذكي</h4>
+          <span><i class="fas fa-circle" style="font-size:0.55rem;"></i> متصل ومستعد للمساعدة</span>
+        </div>
+      </div>
+      <button class="modal-close ai-close" style="position:static; width:30px; height:30px;">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="ai-messages">
+      <div class="chat-bubble bot">
+        مرحباً بك يا بطل في <strong>منصة زلزال الفاخرة</strong>! 👑⚡<br>
+        أنا مساعدك الذكي، يمكنك سؤالي عن الألعاب، روابط مجتمعنا على التلجرام وتيك توك وانستغرام، أو طريقة ربح النقاط!
+      </div>
+    </div>
+
+    <!-- Suggestions Chips -->
+    <div class="ai-suggestions">
+      <div class="suggestion-chip">🎮 ما هي الألعاب المتاحة؟</div>
+      <div class="suggestion-chip">📢 قنوات التلجرام الرسمية</div>
+      <div class="suggestion-chip">💎 كيف أربح نقاطاً؟</div>
+      <div class="suggestion-chip">😂 أخبرني نكتة</div>
+    </div>
+
+    <!-- Input Box -->
+    <div class="ai-input-box">
+      <input type="text" class="ai-input" placeholder="اكتب سؤالك لمساعد زلزال..." />
+      <button class="btn-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       9. نافذة تسجيل الدخول والحساب (Auth Modal)
+       ======================================================== -->
+  <div class="modal-backdrop" id="auth-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="btn-close-auth"><i class="fas fa-times"></i></button>
+      
+      <div class="modal-header">
+        <h2>منصة زلزال الفاخرة</h2>
+        <p>اختر الدخول السريع كزائر أو سجّل حسابك الرسمي لحفظ النقاط</p>
+      </div>
+
+      <!-- Quick Guest Login Option -->
+      <button class="btn btn-gold" id="btn-login-guest" style="width:100%; margin-bottom:18px; font-size:1.05rem; padding:12px;">
+        <i class="fas fa-bolt"></i> دخول سريع كزائر (بنقرة واحدة)
+      </button>
+
+      <div class="auth-divider">
+        <span>أو عبر البريد الإلكتروني</span>
+      </div>
+
+      <!-- Auth Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login">تسجيل الدخول</button>
+        <button class="auth-tab" data-tab="register">إنشاء حساب جديد</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="form-login">
+        <form id="form-login-el">
+          <div class="form-group">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="login-email" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="login-pass" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%; margin-top:10px;">
+            <i class="fas fa-sign-in-alt"></i> دخول للحساب
+          </button>
+        </form>
+      </div>
+
+      <!-- Register Form -->
+      <div id="form-register" style="display:none;">
+        <form id="form-register-el">
+          <div class="form-group">
+            <label class="form-label">اسم المستخدم / اللقب</label>
+            <input type="text" class="form-control" id="reg-name" required placeholder="مثال: البطل زلزال">
+          </div>
+          <div class="form-group">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="reg-email" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="reg-pass" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%; margin-top:10px;">
+            <i class="fas fa-user-plus"></i> إنشاء الحساب (+100 نقطة هدية)
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       10. نافذة الملف الشخصي (Profile Modal)
+       ======================================================== -->
+  <div class="modal-backdrop" id="profile-modal">
+    <div class="modal-card" style="text-align:center;">
+      <button class="modal-close" id="btn-close-profile"><i class="fas fa-times"></i></button>
+
+      <img src="" id="profile-avatar-img" class="user-avatar-sm" style="width:75px; height:75px; margin:0 auto 12px; display:block;">
+      <h2 id="profile-name-val" style="color:#fff; font-size:1.4rem; font-weight:900;"></h2>
+      <p id="profile-email-val" style="color:#8e9bb0; font-size:0.88rem; margin-bottom:20px;"></p>
+
+      <div style="background:rgba(245,183,0,0.1); border:1px solid rgba(245,183,0,0.3); border-radius:14px; padding:16px; margin-bottom:20px;">
+        <div style="font-size:0.85rem; color:#ffd166;">إجمالي رصيد النقاط</div>
+        <div id="profile-points-val" style="font-size:2rem; font-weight:900; color:#fff;"></div>
+        <div id="profile-type-val" style="font-size:0.8rem; color:#8e9bb0; margin-top:4px;"></div>
+      </div>
+
+      <button class="btn btn-outline" id="btn-logout" style="width:100%; color:#ff0055; border-color:rgba(255,0,85,0.3);">
+        <i class="fas fa-sign-out-alt"></i> تسجيل الخروج
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       11. نافذة تشغيل الألعاب التفاعلية (Game Modal)
+       ======================================================== -->
+  <div class="modal-backdrop" id="game-modal">
+    <div class="modal-card game-modal-card">
+      <button class="modal-close" id="btn-close-game"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="text-align:right; margin-bottom:12px;">
+        <h2 id="game-modal-title" style="font-size:1.3rem;"></h2>
+      </div>
+      <div id="game-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ai-assistant.js"></script>
+  <script src="js/games/snake.js"></script>
+  <script src="js/games/flappy.js"></script>
+  <script src="js/games/wheel.js"></script>
+  <script src="js/games/memory.js"></script>
+  <script src="js/games/tictactoe.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
