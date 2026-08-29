@@ -1,0 +1,110 @@
+{
+  "branding": {
+    "name": " زلزال",
+    "tagline": "المنصة  للترفيه والألعاب والمجتمع",
+    "logoUrl": "https://ravtwfqrqjycyzqqsutq.supabase.co/storage/v1/object/public/uploads/e3aec432-f813-4baa-ae50-cab7bcd7b50c/1788046399390-23728.png",
+    "bannerUrl": "https://ravtwfqrqjycyzqqsutq.supabase.co/storage/v1/object/public/uploads/e3aec432-f813-4baa-ae50-cab7bcd7b50c/1788046399390-23728.png",
+    "themeColor": "#f5b700",
+    "accentColor": "#ff0055",
+    "welcomeMessage": "أهلاً بك في منصة زلزال الفاخرة!"
+  },
+  "ticker": {
+    "enabled": true,
+    "text": "مرحباً بكم في منصة زلزال الرسمية💥",
+    "link": "#games",
+    "speed": 35
+  },
+  "social": {
+    "telegramChannel": {
+      "name": "قناة التلجرام الرسمية",
+      "url": "https://t.me/snt41",
+      "handle": "@snt41",
+      "description": "القناة الرسمية للأخبار والتحديثات والمسابقات",
+      "badge": "1k+ مشترك",
+      "icon": "fab fa-telegram-plane"
+    },
+    "telegramGroup": {
+      "name": "كروب الدردشة والمجتمع",
+      "url": "https://t.me/snt_2",
+      "handle": "@snt_2",
+      "description": "ملتقى الأعضاء والدردشة والتفاعل المباشر",
+      "badge": "512+ عضو",
+      "icon": "fas fa-comments"
+    },
+    "tiktok": {
+      "name": "حساب تيك توك الرسمي",
+      "url": "https://tiktok.com/@jo03kr",
+      "handle": "@jo03kr",
+      "description": "أقوى مقاطع الفيديو والتحديات والبثوث المباشرة",
+      "badge": "2955k+ متابع",
+      "icon": "fab fa-tiktok"
+    },
+    "instagram": {
+      "name": "حساب انستغرام الرسمي",
+      "url": "https://instagram.com/zil.zal1",
+      "handle": "@zil.zal1",
+      "description": "الصور واليوميات والقصص التفاعلية",
+      "badge": "100+ متابع",
+      "icon": "fab fa-instagram"
+    }
+  },
+  "admin": {
+    "username": "ali",
+    "password": "A127"
+  },
+  "ai": {
+    "enabled": true,
+    "botName": "بوت زلزال ",
+    "welcome": "مرحباً بك في منصة زلزال!",
+    "systemPrompt": "أنت مساعد ذكي لمنصة زلزال.",
+    "apiKey": "",
+    "model": "gemini-1.5-flash"
+  },
+  "games": [
+    {
+      "id": "snake",
+      "name": "ثعبان زلزال النيون",
+      "description": "اللعبة الكلاسيكية الشهيرة بتصميم نيون ذهبي",
+      "icon": "fas fa-dragon",
+      "badge": "شائعة",
+      "image": "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": "flappy",
+      "name": "صقر زلزال النفاث",
+      "description": "تحكم بالصقر النفاث وتجاوز العقبات الكهربائية",
+      "icon": "fas fa-paper-plane",
+      "badge": "تحدي",
+      "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": "wheel",
+      "name": "عجلة الحظ الذهبية",
+      "description": "أدر العجلة كل يوم لتربح نقاطاً ومكافآت",
+      "icon": "fas fa-dharmachakra",
+      "badge": "جوائز",
+      "image": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": "memory",
+      "name": "تحدي بطاقات الذاكرة",
+      "description": "اختبر قوة تركيزك وسرعة بديهتك",
+      "icon": "fas fa-brain",
+      "badge": "ذكاء",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": "tictactoe",
+      "name": "إكس أو زلزال التكتيكية",
+      "description": "تحدي الذكاء الاصطناعي في لعبة X-O",
+      "icon": "fas fa-times-circle",
+      "badge": "ضد الذكاء",
+      "image": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=500&q=80"
+    }
+  ],
+  "stats": {
+    "baseVisitors": 3420,
+    "todayVisits": 185,
+    "activeUsers": 24
+  }
+}
