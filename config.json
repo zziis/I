@@ -87,6 +87,14 @@
     },
     {
       "id": "tictactoe",
+      "name": "عملات ",
+      "description": "عملات",
+      "icon": "fas fa-times-circle",
+      "badge": "تجكيع",
+      "image": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=500&q=80"
+    }
+    {
+      "id": "tictactoe",
       "name": "إكس أو ",
       "description": "تحدي الذكاء الاصطناعي في لعبة X-O",
       "icon": "fas fa-times-circle",
