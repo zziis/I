@@ -12,45 +12,45 @@
     "enabled": true,
     "text": "مرحباً بكم في منصة زلزال الرسمية! تابعوا قناتنا على التلجرام للمسابقات والجوائز جربوا ألعاب زلزال الآن!",
     "link": "#games",
-    "speed": 25
+    "speed": 18
   },
   "social": {
     "telegramChannel": {
       "name": "قناة التلجرام الرسمية",
-      "url": "https://t.me/zilzal_channel",
-      "handle": "@zilzal_channel",
+      "url": "https://t.me/snt41",
+      "handle": "@snt41",
       "description": "القناة الرسمية للأخبار والتحديثات والمسابقات",
-      "badge": "50K+ مشترك",
+      "badge": "1k+ مشترك",
       "icon": "fab fa-telegram-plane"
     },
     "telegramGroup": {
       "name": "كروب الدردشة والمجتمع",
-      "url": "https://t.me/zilzal_chat",
-      "handle": "@zilzal_chat",
+      "url": "https://t.me/snt_2",
+      "handle": "@snt_2",
       "description": "ملتقى الأعضاء والدردشة والتفاعل المباشر",
-      "badge": "25K+ عضو",
+      "badge": "512+ عضو",
       "icon": "fas fa-comments"
     },
     "tiktok": {
       "name": "حساب تيك توك الرسمي",
-      "url": "https://tiktok.com/@zilzal_official",
-      "handle": "@zilzal_official",
+      "url": "https://tiktok.com/@jo03kr",
+      "handle": "@jo03kr",
       "description": "أقوى مقاطع الفيديو والتحديات والبثوث المباشرة",
-      "badge": "120K+ متابع",
+      "badge": "2955k+ متابع",
       "icon": "fab fa-tiktok"
     },
     "instagram": {
       "name": "حساب انستغرام الرسمي",
-      "url": "https://instagram.com/zilzal_official",
-      "handle": "@zilzal_official",
+      "url": "https://instagram.com/zil.zal1",
+      "handle": "@zil.zal1",
       "description": "الصور واليوميات والقصص التفاعلية",
-      "badge": "80K+ متابع",
+      "badge": "100+ متابع",
       "icon": "fab fa-instagram"
     }
   },
   "admin": {
-    "username": "admin",
-    "password": "zilzal2026"
+    "username": "ali",
+    "password": "A127"
   },
   "ai": {
     "enabled": true,
