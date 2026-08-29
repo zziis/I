@@ -307,10 +307,10 @@ function openGameModal(gameId) {
   window.SoundEngine && window.SoundEngine.play('click');
 
   if (gameId === 'snake') {
-    title.innerHTML = '<i class="fas fa-dragon" style="color:#f5b700;"></i> ثعبان زلزال النيون';
+    title.innerHTML = '<i class="fas fa-dragon" style="color:#f5b700;"></i> ثعبان  النيون';
     window.SnakeGame.init(body);
   } else if (gameId === 'flappy') {
-    title.innerHTML = '<i class="fas fa-paper-plane" style="color:#00f0ff;"></i> صقر زلزال النفاث';
+    title.innerHTML = '<i class="fas fa-paper-plane" style="color:#00f0ff;"></i> صقر  النفاث';
     window.FlappyGame.init(body);
   } else if (gameId === 'wheel') {
     title.innerHTML = '<i class="fas fa-dharmachakra" style="color:#ffd166;"></i> عجلة الحظ الذهبية';
@@ -319,7 +319,7 @@ function openGameModal(gameId) {
     title.innerHTML = '<i class="fas fa-brain" style="color:#00ff88;"></i> تحدي بطاقات الذاكرة';
     window.MemoryGame.init(body);
   } else if (gameId === 'tictactoe') {
-    title.innerHTML = '<i class="fas fa-times-circle" style="color:#ff0055;"></i> إكس أو زلزال التكتيكية';
+    title.innerHTML = '<i class="fas fa-times-circle" style="color:#ff0055;"></i> إكس أو ';
     window.TicTacToeGame.init(body);
   }
 }
