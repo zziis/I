@@ -1,16 +1,16 @@
 {
   "branding": {
-    "name": "منصة زلزال",
-    "tagline": "المنصة الفاخرة للترفيه والألعاب والمجتمع",
+    "name": "زلزال",
+    "tagline": "المنصة للترفيه والألعاب والمجتمع",
     "logoUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80",
     "bannerUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
     "themeColor": "#f5b700",
     "accentColor": "#ff0055",
-    "welcomeMessage": "أهلاً بك في منصة زلزال الفاخرة!"
+    "welcomeMessage": "أهلاً بك في منصة زلزال !"
   },
   "ticker": {
     "enabled": true,
-    "text": "مرحباً بكم في منصة زلزال الرسمية! تابعوا قناتنا على التلجرام !",
+    "text": "مرحباً بكم في منصة زلزال الرسمية!  !",
     "link": "#games",
     "speed": 18
   },
@@ -63,7 +63,7 @@
   "games": [
     {
       "id": "snake",
-      "name": "ثعبان زلزال النيون",
+      "name": "ثعبان  النيون",
       "description": "اللعبة الكلاسيكية الشهيرة بتصميم نيون ذهبي",
       "icon": "fas fa-dragon",
       "badge": "شائعة",
@@ -71,7 +71,7 @@
     },
     {
       "id": "flappy",
-      "name": "صقر زلزال النفاث",
+      "name": "صقر  النفاث",
       "description": "تحكم بالصقر النفاث وتجاوز العقبات الكهربائية",
       "icon": "fas fa-paper-plane",
       "badge": "تحدي",
@@ -87,7 +87,7 @@
     },
     {
       "id": "tictactoe",
-      "name": "إكس أو زلزال التكتيكية",
+      "name": "إكس أو ",
       "description": "تحدي الذكاء الاصطناعي في لعبة X-O",
       "icon": "fas fa-times-circle",
       "badge": "ضد الذكاء",
